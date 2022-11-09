@@ -20,6 +20,13 @@ asyncio has various libraries to work with other frameworks and tools, google fo
 
 Fork->join style of pattern.  Thread process works on the same memory per process.
 
+Starting threads and joining threads, using the daemon arguement to run in the background.
+![](images_for_notes/Starting_waiting_threads.png)
+
+Using List comprehensions to group threads
+
+![](images_for_notes/listing_threads_list_comp.png)
+
 ### Processes
 
 ### The Global Interpreter Lock (GIL)

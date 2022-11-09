@@ -17,6 +17,7 @@ def main():
         threading.Thread(target=process_data, args=(40, data), daemon=True),
     ]
     abort_thread = threading.Thread(target=check_cancel, daemon=True)
+
     abort_thread.start()
 
     [t.start() for t in threads]
