@@ -28,7 +28,7 @@ Using List comprehensions to group threads
 ![](images_for_notes/listing_threads_list_comp.png)
 
 ### Processes
-
+![](images_for_notes/multi_processes.png)
 ### The Global Interpreter Lock (GIL)
 Is Pythons memory management feature.  
 
@@ -40,7 +40,13 @@ Use glances `brew install glances`
 
 Run with `glances`
 
+### UnSync
 
+For mixed-mode parallelism
+
+If the @unsync() is applied to a async function an ambient asyncio event loop will run.
+
+For none async functions the @unsync() can still be used, but with the arguement cpu_bound=True.  This will mark it for multiprocessing. No arguement will mark it for threading.
 
 
 
